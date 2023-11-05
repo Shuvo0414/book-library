@@ -2,8 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import useTheme from "../../hooks/useTheme";
+import { FaMoon } from "react-icons/fa";
+import { BsSunFill } from "react-icons/bs";
 
 const Navbar = () => {
+  const { changeTheme, mode } = useTheme();
   const { user, logOut } = useContext(AuthContext);
   const links = (
     <>
@@ -14,7 +18,7 @@ const Navbar = () => {
             isPending
               ? "pending "
               : isActive
-              ? " text-[#1A1E4A] underline font-bold"
+              ? " text-[#1A1E4A] dark:text-red-600 underline font-bold"
               : ""
           }
         >
@@ -98,7 +102,11 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-
+      <div>
+        <button onClick={changeTheme}>
+          {mode === "dark" ? <FaMoon /> : <BsSunFill />}
+        </button>
+      </div>
       <div className="navbar-end">
         {user?.email ? (
           <div className="dropdown dropdown-end ">
