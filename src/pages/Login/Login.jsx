@@ -1,4 +1,4 @@
-import { Link, Navigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginImage from "../../assets/login.jpg";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useContext, useState } from "react";
@@ -7,8 +7,10 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import GoogleLogin from "../../components/GoogleLogin/GoogleLogin";
 
 const Login = () => {
-  const [showPassword, setPassword] = useState(false);
   const { singIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [showPassword, setPassword] = useState(false);
 
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -25,7 +27,7 @@ const Login = () => {
     singIn(email, password)
       .then(() => {
         toast.success("User login successfully");
-        Navigate(location?.state ? location.state : "/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch(() => {
         toast.error("Passwords do not match");
