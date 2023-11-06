@@ -6,8 +6,9 @@ const AddBook = () => {
     const name = form.name.value;
     const quantity = Math.max(0, form.quantity.value); // Ensure non-negative value
     const author = form.author.value;
-    const category = form.category.value;
+    const categoryName = form.categoryName.value;
     const shortDescription = form.shortDescription.value;
+    const bookContent = form.bookContent.value;
     const rating = form.rating.value;
 
     const newBook = {
@@ -15,8 +16,9 @@ const AddBook = () => {
       name,
       quantity,
       author,
-      category,
+      categoryName,
       shortDescription,
+      bookContent,
       rating,
     };
     console.log(newBook);
@@ -45,7 +47,7 @@ const AddBook = () => {
               Image
             </label>
             <input
-              type="file"
+              type="img"
               name="image"
               className="input input-bordered w-full"
             />
@@ -88,7 +90,10 @@ const AddBook = () => {
             <label htmlFor="category" className="label">
               Category
             </label>
-            <select name="category" className="select select-bordered w-full">
+            <select
+              name="categoryName"
+              className="select select-bordered w-full"
+            >
               <option value="Novel">Novel</option>
               <option value="Thriller">Thriller</option>
               <option value="History">History</option>
@@ -106,15 +111,27 @@ const AddBook = () => {
             />
           </div>
         </div>
-        <div className="form-control mb-4 w-full">
-          <label htmlFor="shortDescription" className="label">
-            Short Description
-          </label>
-          <textarea
-            name="shortDescription"
-            className="textarea textarea-bordered w-full"
-          />
+        <div className="md:flex gap-4 ">
+          <div className="form-control mb-4 md:w-1/2">
+            <label htmlFor="shortDescription" className="label">
+              Short Description
+            </label>
+            <textarea
+              name="shortDescription"
+              className="textarea textarea-bordered w-full h-40"
+            />
+          </div>
+          <div className="form-control mb-4 md:w-1/2">
+            <label htmlFor="bookContent" className="label">
+              Book Content
+            </label>
+            <textarea
+              name="bookContent"
+              className="textarea textarea-bordered w-full h-40"
+            />
+          </div>
         </div>
+
         <input
           className="btn btn-block bg-[#29307d] hover:bg-[#444db5] text-white"
           type="submit"
