@@ -20,6 +20,18 @@ const AddBook = () => {
       rating,
     };
     console.log(newBook);
+
+    // send data to server side
+
+    // fetch("https://assignment-10-server-side-eight-sigma.vercel.app/products", {
+    //   method: "POST",
+    //   headers: { "content-type": "application/json" },
+    //   body: JSON.stringify(newProducts),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //   });
   };
   return (
     <div className="p-4 bg-gray-200 mt-10 mb-20">
