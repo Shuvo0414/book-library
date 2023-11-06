@@ -1,4 +1,8 @@
+import toast from "react-hot-toast";
+import useAxios from "../../hooks/useAxios";
+
 const AddBook = () => {
+  const axios = useAxios();
   const handleAddBook = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -25,15 +29,15 @@ const AddBook = () => {
 
     // send data to server side
 
-    // fetch("https://assignment-10-server-side-eight-sigma.vercel.app/products", {
-    //   method: "POST",
-    //   headers: { "content-type": "application/json" },
-    //   body: JSON.stringify(newProducts),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //   });
+    axios
+      .post("/books", newBook)
+      .then((response) => {
+        console.log("Book added successfully:", response.data);
+        toast.success("Book added successfully");
+      })
+      .catch((error) => {
+        console.error("Error adding book:", error);
+      });
   };
   return (
     <div className="p-4 bg-gray-200 mt-10 mb-20">

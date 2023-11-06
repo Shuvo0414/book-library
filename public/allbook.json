@@ -1,0 +1,159 @@
+{
+    "Novel": [
+        
+      {
+        
+        "image" : "https://i.ibb.co/YBcsPpm/to-kill-a-mockingbird.webp",
+        "Name": "To Kill a Mockingbird",
+        "Author": "Harper Lee",
+        "Description": "Set in the American South during the 1930s, 'To Kill a Mockingbird' is a classic novel that explores issues of racial injustice and moral growth through the eyes of a young girl named Scout Finch.",
+        "Content": " When he was nearly thirteen, my brother Jem got his arm badly broken at the
+        elbow. When it healed, and Jem is fears of never being able to play football were
+        assuaged, he was seldom self-conscious about his injury. His left arm was
+        somewhat shorter than his right; when he stood or walked, the back of his hand was
+        at right angles to his body, his thumb parallel to his thigh. He could not have cared
+        less, so long as he could pass and punt.
+        When enough years had gone by to enable us to look back on them, we
+        sometimes discussed the events leading to his accident. I maintain that the Ewells
+        started it all, but Jem, who was four years my senior, said it started long before
+        that. He said it began the summer Dill came to us, when Dill first gave us the idea
+        of making Boo Radley come out"
+      },
+   
+
+
+      {
+        "image": "https://i.ibb.co/8b5mfp0/Prideand-Prejudice.jpg",
+        "Name": "Pride and Prejudice",
+        "Author": "Jane Austen",
+        "Description": "'Pride and Prejudice' navigates the complexities of love, social class, and personal growth. It underscores the significance of self-awareness and the need to overcome preconceived notions.",
+        "Content": "For a young woman living a presumably insular life in Regency England, Jane Austen produced an impressive body of works that has continued to grow in popularity. She was born in 1775 in Hampshire, England to a parson is family, and she left home only for five years to attend boarding school and for occasional visits to siblings. Surrounded by books all of her life, she found an eager audience for her writing among her close-knit family. Although she never married and had only one serious romance, her novels of courtship and marriage have remained favorites. Austen completed the first draft of Pride and Prejudice, which she titled First Impressions, in 1797, but it was not published until after she had rewritten it nearly sixteen years later. Of her six complete novels, Pride and Prejudice seems to have been her favorite. In a letter to her sister Cassandra she referred to the book as her 'darling child' and called her protagonist Elizabeth Bennet 'as delightful a character as ever appeared in print.'"
+      },
+
+
+      {
+        "image": "https://i.ibb.co/QQDJksD/The-Great-Gatsby.webp",
+        "Name": "The Great Gatsby",
+        "Author": "F. Scott Fitzgerald",
+        "Description": "'The Great Gatsby' delves into the allure and disillusionment of the American Dream, revealing the emptiness of materialism.",
+        "Content": "In my younger and more vulnerable years, my father gave me some advice that I’ve been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven’t had the advantages that you’ve had.' He didn’t say any more, but we’ve always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I’m inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought — frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions. Reserving judgments is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth."
+      }
+      ,
+
+
+
+      {
+        "image" : "https://i.ibb.co/VmMfqNZ/1984-GEORGE-ORWELL.jpg",
+        "Name": "1984",
+        "Author": "George Orwell",
+        "Description": "'1984' serves as a stark warning about the perils of totalitarianism, surveillance, and the manipulation of truth.",
+        "Content": "I
+        t was a bright cold day in April, and the clocks were striking thirteen. Winston Smith, his chin nuzzled into his
+        breast in an effort to escape the vile wind, slipped quickly
+        through the glass doors of Victory Mansions, though not
+        quickly enough to prevent a swirl of gritty dust from entering along with him.
+        The hallway smelt of boiled cabbage and old rag mats. At
+        one end of it a coloured poster, too large for indoor display,
+        had been tacked to the wall. It depicted simply an enormous face, more than a metre wide: the face of a man of
+        about forty-five, with a heavy black moustache and ruggedly handsome features. Winston made for the stairs. It was
+        no use trying the lift. Even at the best of times it was seldom working, and at present the electric current was cut
+        off during daylight hours. It was part of the economy drive
+        in preparation for Hate Week. The flat was seven flights up,
+        and Winston, who was thirty-nine and had a varicose ulcer
+        above his right ankle, went slowly, resting several times on
+        the way. On each landing, opposite the lift-shaft, the poster
+        with the enormous face gazed from the wall. It was one of
+        those pictures which are so contrived that the eyes follow
+        you about when you move. BIG BROTHER IS WATCHING
+        YOU, the caption beneath it ran."
+      }
+
+
+    ],
+    "Thriller": [
+      {
+        "image" : "https://i.ibb.co/Y7gJngC/The-Girl-with-the-Dragon-Tattoo.jpg",
+        "Name": "The Girl with the Dragon Tattoo",
+        "Author": "Stieg Larsson",
+        "Description": "'The Girl with the Dragon Tattoo' weaves a thrilling narrative of mystery and secrets, exploring the complexities of trust and betrayal.",
+        "Content": "The trial was irretrievably over; everything that could be said hadbeen said, but he had never doubted that he would lose. Thewritten verdict was handed down at . on Friday morning, andall that remained was a summing-up from the reporters waitingin the corridor outside the district court.Carl Mikael Blomkvist saw them through the doorway andslowed his step. He had no wish to discuss the verdict, butquestions were unavoidable, and he  of all people  knew that they had to be asked and answered. This is how it is to be a criminal ,he thought. On the other side of the microphone. He straightenedup and tried to smile. The reporters gave him friendly, almostembarrassed greetings."
+      },
+
+      {
+        "Name": "https://i.ibb.co/T15rDZt/Gone-Girl.jpg",
+        "Author": "Gillian Flynn",
+        "Description": "'Gone Girl' presents a gripping exploration of deception and the blurred lines between truth and falsehood.",
+        "Content": "When I think of my wife, I always think of her head. The shape of it, to begin with. The very first time I saw her, it was the back of the head I saw, and there was something lovely about it, the angles of it. Like a shiny, hard corn kernel or a riverbed fossil. She had what the Victorians would call a finely shaped head. You could imagine the skull quite easily. I’d know her head anywhere. And what’s inside it. I think of that too: her mind. Her brain, all those coils, and her thoughts shuttling through those coils like fast, frantic centipedes. Like a child, I picture opening her skull, unspooling her brain and sifting through it, trying to catch and pin down her thoughts. What are you thinking, Amy? The question I’ve asked most often during our marriage, if not out loud, if not to the person who could answer. I suppose these questions stormcloud over every marriage: What are you thinking? How are you feeling? Who are you? What have we done to each other? What will we do? My eyes flipped open at exactly six A.M. This was no avian fluttering of the lashes, no gentle blink toward consciousness. The awakening was mechanical. A spooky ventriloquist-dummy click of the lids: The world is black and then, showtime! 6-0-0 the clock said—in my face, first thing I saw. 6-0-0. It felt different. I rarely woke at such a rounded time. I was a man of jagged risings: 8:43, 11:51, 9:26. My life was alarmless."
+      },
+
+
+      {
+        "image" : "jhlvhlskdf",
+        "Name": "The Da Vinci Code",
+        "Author": "Dan Brown",
+        "Description": "'The Da Vinci Code' combines art, history, and mystery, drawing readers into the intrigue of hidden symbols and secrets.",
+        "Content": "First and foremost, to my friend and editor, Jason Kaufman, for working so hard on this project and for truly understanding what this book is all about. And to the incomparable Heide Lange—tireless champion of The Da Vinci Code, agent extraordinaire, and trusted friend. I cannot fully express my gratitude to the exceptional team at Doubleday, for their generosity, faith, and superb guidance. Thank you especially to Bill Thomas and Steve Rubin, who believed in this book from the start. My thanks also to the initial core of early in-house supporters, headed by Michael Palgon, Suzanne Herz, Janelle Moburg, Jackie Everly, and Adrienne Sparks, as well as to the talented people of Doubleday's sales force."
+      },
+
+
+      {
+        "Name": "The Silence of the Lambs",
+        "Author": "Thomas Harris",
+        "Description": "'The Silence of the Lambs' delves into the psychology of criminal investigation and the depths of human evil.",
+        "Content": "FBI agent Clarice Starling seeks the help of incarcerated serial killer Dr. Hannibal Lecter to catch another killer known as Buffalo Bill, prompting us to explore the intricacies of criminal behavior and the pursuit of justice."
+      }
+    ],
+    "History": [
+      {
+        "Name": "A People's History of the United States",
+        "Author": "Howard Zinn",
+        "Description": "'A People's History of the United States' offers an alternative perspective on American history, emphasizing the stories of everyday individuals and their contributions to the nation's development.",
+        "Content": "The book encourages readers to question traditional narratives and recognize the often-overlooked role of ordinary people in shaping our society."
+      },
+      {
+        "Name": "The Wright Brothers",
+        "Author": "David McCullough",
+        "Description": "'The Wright Brothers' celebrates the spirit of innovation and determination, serving as a testament to the power of perseverance and the pursuit of ambitious goals.",
+        "Content": "The biography of Wilbur and Orville Wright inspires us to admire and emulate their determination and innovation, encouraging us to pursue our own ambitions."
+      },
+      {
+        "Name": "Sapiens: A Brief History of Humankind",
+        "Author": "Yuval Noah Harari",
+        "Description": "'Sapiens' offers a sweeping overview of human history, exploring cultural and scientific developments and the impact of cultural and biological forces on the course of history.",
+        "Content": "The book prompts us to consider the interplay of culture and biology in shaping the human experience and the world we inhabit."
+      },
+      {
+        "Name": "1776",
+        "Author": "David McCullough",
+        "Description": "'1776' provides a detailed account of the pivotal year in American history when the Declaration of Independence was written and the American Revolution began.",
+        "Content": "The book encourages us to engage with the historical events that led to the birth of the United States, fostering a deeper appreciation for the sacrifices and struggles of those who came before us."
+      }
+    ],
+    "Drama": [
+      {
+        "Name": "Romeo and Juliet",
+        "Author": "William Shakespeare",
+        "Description": "'Romeo and Juliet' is a tragic love story that explores themes of love, conflict, and fate.",
+        "Content": "The play prompts us to contemplate the power of love, the consequences of conflict, and the role of fate in our own lives and relationships."
+      },
+      {
+        "Name": "Hamlet",
+        "Author": "William Shakespeare",
+        "Description": "'Hamlet' is a tragedy that delves into themes of revenge, madness, and the human psyche.",
+        "Content": "The play encourages us to examine the complexities of human emotions, the consequences of revenge, and the fragility of the human mind."
+      },
+      {
+        "Name": "A Streetcar Named Desire",
+        "Author": "Tennessee Williams",
+        "Description": "'A Streetcar Named Desire' is a powerful drama that explores the disintegration of a Southern belle's life in New Orleans.",
+        "Content": "The play prompts us to consider the impact of delusion, desire, and societal pressures on the human psyche and relationships, encouraging self-reflection."
+      },
+      {
+        "Name": "Death of a Salesman",
+        "Author": "Arthur Miller",
+        "Description": "'Death of a Salesman' is a tragedy that reflects on the American Dream, success, and disillusionment.",
+        "Content": "The play invites us to reflect on the pursuit of success, the nature of the American Dream, and the consequences of disillusionment, prompting us to reevaluate our own aspirations and values."
+      }
+    ]
+  }
+  
