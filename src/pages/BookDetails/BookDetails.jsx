@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
 
@@ -80,9 +80,11 @@ const BookDetails = ({ book }) => {
             </div>
           </dialog>
         </div>
-        <button className="px-6 py-2 bg-[#29307d] text-white rounded-lg">
-          Read
-        </button>
+        <Link to={`/readBook/${bookDetails._id}`}>
+          <button className="px-6 py-2 bg-[#29307d] text-white rounded-lg">
+            Read
+          </button>
+        </Link>
       </div>
     </div>
   );

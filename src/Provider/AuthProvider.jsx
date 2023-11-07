@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../config/firebaseConfig";
+import axios from "axios";
 
 export const AuthContext = createContext(null);
 
@@ -70,13 +71,34 @@ const AuthProvider = ({ children }) => {
   // using observer
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      const userEmail = currentUser?.email || user?.email;
+      const loggedUser = { email: userEmail };
       setUser(currentUser);
       setLoading(false);
+
+      // if user exist then issue a token
+      if (currentUser) {
+        axios
+          .post("http://localhost:5001/api/v1/jwt", loggedUser, {
+            withCredentials: true,
+          })
+          .then(() => {
+            // console.log("toke issue", res.data);
+          });
+      } else {
+        axios
+          .post("http://localhost:5001/api/v1/logout", loggedUser, {
+            withCredentials: true,
+          })
+          .then(() => {
+            // console.log(res.data);
+          });
+      }
     });
     return () => {
       unSubscribe();
     };
-  }, []);
+  }, [user?.email]);
 
   const authInfo = {
     googleLogin,

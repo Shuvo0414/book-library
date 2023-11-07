@@ -11,6 +11,7 @@ import CategoryBooks from "../pages/CategoryBooks/CategoryBooks";
 import BookDetails from "../pages/BookDetails/BookDetails";
 import UpdateBooks from "../pages/UpdateBooks/UpdateBooks";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ReadBook from "../pages/ReadBook/ReadBook";
 
 const Routes = createBrowserRouter([
   {
@@ -57,7 +58,10 @@ const Routes = createBrowserRouter([
             <BookDetails></BookDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5001/api/v1/books"),
+        loader: () =>
+          fetch("http://localhost:5001/api/v1/books", {
+            credentials: "include",
+          }),
       },
 
       {
@@ -67,6 +71,14 @@ const Routes = createBrowserRouter([
             <UpdateBooks></UpdateBooks>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/readBook/:bookId",
+        element: <ReadBook></ReadBook>,
+        loader: () =>
+          fetch("http://localhost:5001/api/v1/books", {
+            credentials: "include",
+          }),
       },
 
       {
