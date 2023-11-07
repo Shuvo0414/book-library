@@ -5,7 +5,7 @@ import BookCard from "../../components/BookCard/BookCard";
 
 const CategoryBooks = () => {
   const { categoryName } = useParams();
-  console.log(categoryName);
+  //   console.log(categoryName);
   const [books, setBooks] = useState([]);
   const axios = useAxios();
 
@@ -13,7 +13,7 @@ const CategoryBooks = () => {
     axios
       .get(`/books/${categoryName}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setBooks(res.data);
       })
       .catch((error) => {

@@ -8,6 +8,9 @@ import BorrowedBooks from "../pages/BorrowedBooks/BorrowedBooks";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import CategoryBooks from "../pages/CategoryBooks/CategoryBooks";
+import BookDetails from "../pages/BookDetails/BookDetails";
+import UpdateBooks from "../pages/UpdateBooks/UpdateBooks";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -21,29 +24,60 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/addbook",
-        element: <AddBook></AddBook>,
+        element: (
+          <PrivateRoute>
+            <AddBook></AddBook>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/allbooks",
-        element: <AllBooks></AllBooks>,
+        element: (
+          <PrivateRoute>
+            <AllBooks></AllBooks>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/borrowedbooks",
-        element: <BorrowedBooks></BorrowedBooks>,
+        element: (
+          <PrivateRoute>
+            <BorrowedBooks></BorrowedBooks>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/categoryBooks/:categoryName",
         element: <CategoryBooks></CategoryBooks>,
       },
+      {
+        path: "/book/:bookId",
+        element: (
+          <PrivateRoute>
+            <BookDetails></BookDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:5001/api/v1/books"),
+      },
+
+      {
+        path: "/update/:id",
+        element: (
+          <PrivateRoute>
+            <UpdateBooks></UpdateBooks>
+          </PrivateRoute>
+        ),
+      },
+
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
     ],
-  },
-  {
-    path: "login",
-    element: <Login></Login>,
-  },
-  {
-    path: "register",
-    element: <Register></Register>,
   },
 ]);
 
