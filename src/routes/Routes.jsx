@@ -7,6 +7,7 @@ import AllBooks from "../pages/AllBooks/AllBooks";
 import BorrowedBooks from "../pages/BorrowedBooks/BorrowedBooks";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import CategoryBooks from "../pages/CategoryBooks/CategoryBooks";
 
 const Routes = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const Routes = createBrowserRouter([
       {
         path: "/borrowedbooks",
         element: <BorrowedBooks></BorrowedBooks>,
+      },
+      {
+        path: "/categoryBooks/:categoryName",
+        element: <CategoryBooks></CategoryBooks>,
       },
     ],
   },

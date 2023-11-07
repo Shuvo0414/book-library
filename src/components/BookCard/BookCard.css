@@ -1,0 +1,47 @@
+.book-card {
+  width: 300px;
+  height: 510px;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  position: relative;
+}
+
+.book-card img {
+  width: 286px;
+  height: 286px;
+  margin: 7px;
+  border-radius: 8px;
+}
+
+.category-name {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+}
+
+.card-info p {
+  margin-top: 5px;
+}
+
+.card-info {
+  margin-left: 14px;
+}
+
+.btn-card {
+  width: 100%;
+  background: #29307d;
+  border: 1px solid #95a0a7;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 6px;
+}
+.btn-card:hover {
+  background-color: #444db5;
+}
+.star-ratings {
+  font-size: 5px; /* Adjust the size as needed */
+}
