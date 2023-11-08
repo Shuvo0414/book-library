@@ -4,26 +4,35 @@ import AllBookCard from "../../components/AllBookCard";
 
 const AllBooks = () => {
   const axios = useAxios();
-
-  const [allBook, setAllBook] = useState([]);
+  const [allBooks, setAllBooks] = useState([]);
+  const [showAvailableBooks, setShowAvailableBooks] = useState(false);
 
   useEffect(() => {
     axios
       .get("/books")
       .then((res) => {
-        // console.log(res.data);
-        setAllBook(res.data);
+        setAllBooks(res.data);
       })
       .catch((error) => {
         console.error(error);
       });
   }, [axios]);
 
+  const filteredBooks = showAvailableBooks
+    ? allBooks.filter((book) => book.quantity > 0)
+    : allBooks;
+
   return (
-    <div>
+    <div className=" container mx-auto mt-10 mb-5">
+      <button
+        onClick={() => setShowAvailableBooks(!showAvailableBooks)}
+        className="bg-[#29307d] text-white rounded p-2"
+      >
+        {showAvailableBooks ? "Show All Books" : "Show Available Books"}
+      </button>
       <div className="container grid grid-cols-1 lg:grid-cols-4 gap-4 mx-auto">
-        {allBook.map((book) => (
-          <AllBookCard key={book._id} book={book}></AllBookCard>
+        {filteredBooks.map((book) => (
+          <AllBookCard key={book._id} book={book} />
         ))}
       </div>
     </div>

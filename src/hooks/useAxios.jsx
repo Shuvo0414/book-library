@@ -20,7 +20,7 @@ const useAxios = () => {
       },
       (error) => {
         console.log("error track in the interceptors", error.response);
-        if (error.response.status === 401 || error.response.status === 403) {
+        if (error.response?.status === 401 || error.response?.status === 403) {
           console.log("logout the user");
           logOut()
             .then(() => {

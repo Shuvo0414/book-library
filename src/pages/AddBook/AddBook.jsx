@@ -33,7 +33,10 @@ const AddBook = () => {
       .post("/books", newBook)
       .then((response) => {
         console.log("Book added successfully:", response.data);
-        toast.success("Book added successfully");
+
+        if (response.data.insertedId) {
+          toast.success("Book added successfully");
+        }
       })
       .catch((error) => {
         console.error("Error adding book:", error);
@@ -51,6 +54,7 @@ const AddBook = () => {
               Image
             </label>
             <input
+              required
               type="img"
               name="image"
               className="input input-bordered w-full"
@@ -109,6 +113,7 @@ const AddBook = () => {
               Rating
             </label>
             <input
+              required
               type="text"
               name="rating"
               className="input input-bordered w-full"

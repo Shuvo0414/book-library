@@ -15,8 +15,8 @@ const BookCard = ({ book }) => {
 
       <div className=" card-info">
         <h6 className="category-name text-xl font-bold  ">{name}</h6>
-        <p>{author}</p>
-        <p>{categoryName}</p>
+        <p className=" text-[17px] font-medium">Author Name : {author}</p>
+        <p className="text-[17px] font-medium">Category: {categoryName}</p>
         <StarRatings
           rating={numericRating} // Set the rating based on the converted numeric rating
           starRatedColor="gold" // Color of the filled-in stars
