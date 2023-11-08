@@ -1,6 +1,6 @@
 # About My Projects
 
-**Live Site:** []
+**Live Site:** [https://elaborate-genie-18d3e8.netlify.app]
 
 1. - Users can create accounts, log in, and toggle between login and registration views. Social login options with Google and Facebook are available.
 
