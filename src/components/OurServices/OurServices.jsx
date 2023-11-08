@@ -11,8 +11,8 @@ import computerclasss from "../../assets/computerclasss.png";
 const OurServices = () => {
   return (
     <div className=" container mx-auto mt-24 ">
-      <h1 className="  text-2xl md:text-[36px] font-bold px-2">
-        Our <span className="text-[#29307d]">Services</span>
+      <h1 className=" dark:text-white text-2xl md:text-[36px] font-bold px-2">
+        Our <span className="text-[#29307d] dark:text-white  ">Services</span>
       </h1>
       <div className=" grid grid-cols-1 md:grid-cols-3 mt-6 mb-6 gap-1 md:gap-0  ">
         <div className="services  md:border-r-2 space-y-4">
