@@ -79,17 +79,25 @@ const AuthProvider = ({ children }) => {
       // if user exist then issue a token
       if (currentUser) {
         axios
-          .post("http://localhost:5001/api/v1/jwt", loggedUser, {
-            withCredentials: true,
-          })
+          .post(
+            "https://assignment-11-server-side-tan.vercel.app/api/v1/jwt",
+            loggedUser,
+            {
+              withCredentials: true,
+            }
+          )
           .then(() => {
             // console.log("toke issue", res.data);
           });
       } else {
         axios
-          .post("http://localhost:5001/api/v1/logout", loggedUser, {
-            withCredentials: true,
-          })
+          .post(
+            "https://assignment-11-server-side-tan.vercel.app/api/v1/logout",
+            loggedUser,
+            {
+              withCredentials: true,
+            }
+          )
           .then(() => {
             // console.log(res.data);
           });

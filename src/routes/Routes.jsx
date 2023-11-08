@@ -59,9 +59,12 @@ const Routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () =>
-          fetch("http://localhost:5001/api/v1/books", {
-            credentials: "include",
-          }),
+          fetch(
+            "https://assignment-11-server-side-tan.vercel.app/api/v1/books",
+            {
+              credentials: "include",
+            }
+          ),
       },
 
       {
@@ -76,9 +79,12 @@ const Routes = createBrowserRouter([
         path: "/readBook/:bookId",
         element: <ReadBook></ReadBook>,
         loader: () =>
-          fetch("http://localhost:5001/api/v1/books", {
-            credentials: "include",
-          }),
+          fetch(
+            "https://assignment-11-server-side-tan.vercel.app/api/v1/books",
+            {
+              credentials: "include",
+            }
+          ),
       },
 
       {
