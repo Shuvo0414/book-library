@@ -18,7 +18,7 @@ const Navbar = () => {
             isPending
               ? "pending "
               : isActive
-              ? " text-[#1A1E4A] dark:text-red-600 underline font-bold"
+              ? " text-[#1A1E4A]  underline font-bold"
               : ""
           }
         >

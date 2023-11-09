@@ -33,7 +33,7 @@ const Banner = () => {
                 <h1 className=" text-4xl px-4 font-bold md:text-6xl">
                   Small Stories by Sam Wilson
                 </h1>
-                <p className=" px-4">OCTOBER 15, 2022</p>
+                <p className=" px-4 text-[#76bd42]">OCTOBER 15, 2022</p>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Banner = () => {
                 <h1 className=" text-4xl px-4 font-bold md:text-6xl">
                   New Little World by Chris Awdry
                 </h1>
-                <p className=" px-4">NOVEMBER 07, 2022</p>
+                <p className=" px-4 text-[#76bd42]">NOVEMBER 07, 2022</p>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Banner = () => {
                 <h1 className=" text-4xl px-4 font-bold md:text-6xl">
                   Ascendant by Jack Campbell
                 </h1>
-                <p className=" px-4">NOVEMBER 09, 2022</p>
+                <p className=" px-4 text-[#76bd42]">NOVEMBER 09, 2022</p>
               </div>
             </div>
           </div>
