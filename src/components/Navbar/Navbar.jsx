@@ -70,7 +70,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100  shadow-md p-4 md:px-10">
+    <div className="navbar bg-base-100 gap-4  shadow-md p-4 md:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -102,11 +102,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div>
-        <button onClick={changeTheme}>
-          {mode === "dark" ? <FaMoon /> : <BsSunFill />}
-        </button>
-      </div>
+
       <div className="navbar-end">
         {user?.email ? (
           <div className="dropdown dropdown-end ">
@@ -140,6 +136,9 @@ const Navbar = () => {
           </Link>
         )}
       </div>
+      <button className=" text-xl" onClick={changeTheme}>
+        {mode === "dark" ? <FaMoon /> : <BsSunFill />}
+      </button>
     </div>
   );
 };

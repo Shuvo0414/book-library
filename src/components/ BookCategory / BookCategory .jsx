@@ -39,7 +39,9 @@ function BookCategory() {
     <div className="container mx-auto mt-24">
       <h1 className="text-2xl dark:text-white md:text-4xl font-bold px-2">
         Explore
-        <span className="text-[#29307d] dark:text-white">Mystery Books</span>
+        <span className="text-[#29307d] dark:text-[#76bd42]">
+          Mystery Books
+        </span>
       </h1>
 
       <div className="  flex flex-col md:flex-row mx-auto gap-8 flex-1">

@@ -8,7 +8,9 @@ const BookCategoryCard = ({ categorie }) => {
       <img src={image} alt="" />
 
       <div className=" card-info">
-        <h6 className="category-name text-xl font-bold  ">{categoryName}</h6>
+        <h6 className="category-name text-xl font-bold dark:text-white">
+          {categoryName}
+        </h6>
       </div>
 
       <Link to={`/categoryBooks/${categoryName}`}>
